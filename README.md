@@ -55,15 +55,18 @@ Our simple model focused on sqft_above. With an R-Squared of 0.41, our model had
 
 ![First Multiple Regression Model](images/first_multiple_reg.png)
 
-The first attempt at improving our simple model took the kitchen sink approach. We used 16 predictors, all of the analyzed factors listed above, to construct the regression. This gave much more predictive power of the variance in price. Despite this predictive power, this model was far too complex to be useful to our stakeholders and had an unacceptably high condition number of of 4.63x10<sup>16</sup>
+The first attempt at improving our simple model took the kitchen sink approach. We used 16 predictors, all of the analyzed factors listed above, to construct the regression. This gave much more explanatory power of the variance in price. The kitchen sink approach gave us an adjusted R-squared of 0.55, over a 30% improvement.  Despite this predictive power, this model was far too complex to be useful to our stakeholders and had an unacceptably high condition number of of 4.63x10<sup>16</sup>.
 
 #### Filtering Process
 
 Several further iterations of our model were made to simplify what would otherwise be an unruly model.
 
-Using stastical significance as a means of excising factors, we began removing variables from the model.
+Using stastical significance as a means of excising factors, we began removing variables from the model. After this filtering, our model contained 6 predictors. However, a check for multicolinearity was ran prior to accept this as our final product. We discovered that sqft_above and sqft_lot were highly correlated.
 
 ![Coveriance of Model Factors](images/covar.png)
+
+As such, we decided to remove sqft_lot from the model. Square footage of the lot, while important to home price, will not be a mutable characteristic for our developer. This makes the predictor less relevant to ourstake holders. Additionally, its removal reduce the explanatory power of our model less than the removal of sqft_above.
+
 ## Final Model
 After removing factors due to their insignificance or due to multicolinearity, our final model included the following predictors:
 * sqft_above
