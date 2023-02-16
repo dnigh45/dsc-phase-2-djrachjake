@@ -55,7 +55,7 @@ Our simple model focused on sqft_above. With an R-Squared of 0.41, our model had
 
 ![First Multiple Regression Model](images/first_multiple_reg.png)
 
-The first attempt at improving our simple model took the kitchen sink approach. We used 16 predictors, all of the analyzed factors listed above, to construct the regression. This gave much more predictive power of the variance in price. Despite this predictive power, this model was far too complex to be useful to our stakeholders and had an unacceptably high condition number of of 4.63x10^16^
+The first attempt at improving our simple model took the kitchen sink approach. We used 16 predictors, all of the analyzed factors listed above, to construct the regression. This gave much more predictive power of the variance in price. Despite this predictive power, this model was far too complex to be useful to our stakeholders and had an unacceptably high condition number of of 4.63x10<sup>16</sup>
 
 #### Filtering Process
 
