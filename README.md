@@ -67,6 +67,7 @@ After removing factors due to their insignificance or due to multicolinearity, o
 * sqft_garage
 * sqft_patio
 * nuisance presence
+
 ![Final Regression Model](images/final_multiple_reg.png)
 
 Despite removing 11 predictors, our final model only lost approximately 3% of its predictive power with an adjusted R-squared value of 0.528. The model also had quite a low condition score of 2.63, indicating that there was limited multicolinearity. The limited number of predictors affords this model more value for stakeholders as they have characteristics to focus on. 
@@ -74,11 +75,11 @@ Despite removing 11 predictors, our final model only lost approximately 3% of it
 
 #### Implications (Coefficients)
 
-For every sqft increased above ground, price increases by $468.59
-If a basement is added, price increases by $201427.49
-For every sqft increased in a garage, price decreases by $267.58
-For every sqft increased on a patio, price increases by $274.12
-If a nuisance is present, price decreases by $48570.84
+* For every sqft increased above ground, price increases by $468.59
+* If a basement is added, price increases by $201427.49
+* For every sqft increased in a garage, price decreases by $267.58
+* For every sqft increased on a patio, price increases by $274.12
+* If a nuisance is present, price decreases by $48570.84
 
 What do these numbers actually mean?
 
