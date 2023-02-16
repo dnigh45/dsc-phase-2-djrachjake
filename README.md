@@ -4,7 +4,7 @@ Dietrich Nigh, Rachael McCue, Jake Swecker
 
 #### Summary of Repository Contents:
 * Data set containing King County housing information provided by Flatiron School
-* Exploratory Notebooks from each member of this group.
+* Exploratory Notebooks from each member of this group
 * A copy of our final presentation in PDF format
 * A copy of our final notebook containing detailed analysis and accompanying code
 
@@ -26,7 +26,7 @@ lat, long, zipcode (beyond belonging to the Seattle Metro), address, yr_renovate
 
 * No data on rents
 * Data set did not include any information on unimproved lots
-* Models are not predictive.
+* Models are not predictive
 * No data on development price
 
 ## Bottom Line
@@ -49,9 +49,13 @@ At the outset, the data was not in a useable state and preliminary cleaning need
 
 ![Simple Regression Model](images/simple_reg.png)
 
+Our simple model focused on sqft_above. With an R-Squared of 0.41, our model had room for improvement. 
+
 ## Initial Complex Model
 
 ![First Multiple Regression Model](images/first_multiple_reg.png)
+
+The first attempt at improving our simple model took the kitchen sink approach. We used 16 predictors, all of the analyzed factors listed above, to construct the regression. This gave much more predictive power of the variance in price. Despite this predictive power, this model was far too complex to be useful to our stakeholders and had an unacceptably high condition number of of 4.63x10^16^
 
 #### Filtering Process
 
