@@ -1,6 +1,7 @@
 # Insights for Site Development in Seattle
 <p align="center">
-  <img width="300" height="500" src='images/seattleskyline'>
+  <img src="images/seattleskyline.jpg" alt="">
+>
 </p>
 #### Team Members
 Dietrich Nigh, Rachael McCue, Jake Swecker
